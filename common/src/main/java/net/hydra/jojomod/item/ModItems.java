@@ -27,6 +27,7 @@ public class ModItems {
     public static Item STAND_DISC_STAR_PLATINUM;
     public static Item MAX_STAND_DISC_STAR_PLATINUM;
     public static Item STAND_DISC_THE_WORLD;
+    public static Item STAND_DISC_WEATHER_REPORT;
     public static Item MAX_STAND_DISC_THE_WORLD;
     public static Item STAND_DISC_JUSTICE;
     public static Item MAX_STAND_DISC_JUSTICE;

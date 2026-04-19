@@ -41,6 +41,8 @@ public class FabricItems {
             new MaxStandDiscItem(new Item.Properties().stacksTo(1), new PowersStarPlatinum(null)));
     public static Item STAND_DISC_THE_WORLD = registerItem("the_world_disc",
             new StandDiscItem(new Item.Properties().stacksTo(1), new PowersTheWorld(null)));
+    public static Item STAND_DISC_WEATHER_REPORT = registerItem("weather_report_disc",
+            new StandDiscItem(new Item.Properties().stacksTo(1), new PowersTheWorld(null)));
     public static Item MAX_STAND_DISC_MAGICIANS_RED = registerItem("max_magicians_red_disc",
             new MaxStandDiscItem(new Item.Properties().stacksTo(1), new PowersMagiciansRed(null)));
     public static Item STAND_DISC_MAGICIANS_RED = registerItem("magicians_red_disc",
@@ -476,6 +478,7 @@ public class FabricItems {
                         entries.accept(STAND_DISC_STAR_PLATINUM);
                         entries.accept(MAX_STAND_DISC_STAR_PLATINUM);
                         entries.accept(STAND_DISC_THE_WORLD);
+                        entries.accept(STAND_DISC_WEATHER_REPORT);
                         entries.accept(MAX_STAND_DISC_THE_WORLD);
                         entries.accept(STAND_DISC_JUSTICE);
                         entries.accept(MAX_STAND_DISC_JUSTICE);
@@ -564,6 +567,7 @@ public class FabricItems {
         ModItems.STAND_DISC_THE_WORLD = STAND_DISC_THE_WORLD;
         ((MaxStandDiscItem)MAX_STAND_DISC_THE_WORLD).baseDisc = ((StandDiscItem)STAND_DISC_THE_WORLD);
         ModItems.MAX_STAND_DISC_THE_WORLD = MAX_STAND_DISC_THE_WORLD;
+        ModItems.STAND_DISC_WEATHER_REPORT = STAND_DISC_WEATHER_REPORT;
         ModItems.STAND_DISC_MAGICIANS_RED = STAND_DISC_MAGICIANS_RED;
         ((MaxStandDiscItem)MAX_STAND_DISC_MAGICIANS_RED).baseDisc = ((StandDiscItem)STAND_DISC_MAGICIANS_RED);
         ModItems.MAX_STAND_DISC_MAGICIANS_RED = MAX_STAND_DISC_MAGICIANS_RED;

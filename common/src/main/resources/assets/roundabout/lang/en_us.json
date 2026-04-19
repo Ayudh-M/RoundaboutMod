@@ -86,6 +86,7 @@
 
   "item.roundabout.star_platinum_disc": "Stand Disc",
   "item.roundabout.the_world_disc": "Stand Disc",
+  "item.roundabout.weather_report_disc": "Stand Disc",
   "item.roundabout.justice_disc": "Stand Disc",
   "item.roundabout.d4c_disc": "Stand Disc",
   "item.roundabout.green_day_disc": "Stand Disc",
@@ -128,6 +129,7 @@
   "item.roundabout.metallica_disc.desc": "Metallica",
   "item.roundabout.star_platinum_disc.desc": "Star Platinum",
   "item.roundabout.the_world_disc.desc": "The World",
+  "item.roundabout.weather_report_disc.desc": "Weather Report",
   "item.roundabout.justice_disc.desc": "Justice",
   "item.roundabout.cinderella_disc.desc": "Cinderella",
   "item.roundabout.max_ratt_disc.desc": "Ratt",
