@@ -27,6 +27,7 @@ import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
+import net.hydra.jojomod.stand.powers.PowersWeatherReport;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +43,7 @@ public class FabricItems {
     public static Item STAND_DISC_THE_WORLD = registerItem("the_world_disc",
             new StandDiscItem(new Item.Properties().stacksTo(1), new PowersTheWorld(null)));
     public static Item STAND_DISC_WEATHER_REPORT = registerItem("weather_report_disc",
-            new StandDiscItem(new Item.Properties().stacksTo(1), new PowersTheWorld(null)));
+            new StandDiscItem(new Item.Properties().stacksTo(1), new PowersWeatherReport(null)));
     public static Item MAX_STAND_DISC_MAGICIANS_RED = registerItem("max_magicians_red_disc",
             new MaxStandDiscItem(new Item.Properties().stacksTo(1), new PowersMagiciansRed(null)));
     public static Item STAND_DISC_MAGICIANS_RED = registerItem("magicians_red_disc",
