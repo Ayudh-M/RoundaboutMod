@@ -22,6 +22,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.hydra.jojomod.stand.powers.PowersWeatherReport;
 
 import static net.hydra.jojomod.registry.ForgeCreativeTab.*;
 
@@ -490,7 +491,7 @@ public class ForgeItems {
     public static final RegistryObject<Item> STAND_DISC_THE_WORLD = addToDiscTab(ITEMS.register("the_world_disc",
             () -> new StandDiscItem(new Item.Properties().stacksTo(1), new PowersTheWorld(null))));
     public static final RegistryObject<Item> STAND_DISC_WEATHER_REPORT = addToDiscTab(ITEMS.register("weather_report_disc",
-            () -> new StandDiscItem(new Item.Properties().stacksTo(1), new PowersTheWorld(null))));
+            () -> new StandDiscItem(new Item.Properties().stacksTo(1), new PowersWeatherReport(null))));
     public static final RegistryObject<Item> MAX_STAND_DISC_THE_WORLD = addToDiscTab(ITEMS.register("max_the_world_disc",
             () -> new MaxStandDiscItem(new Item.Properties().stacksTo(1), new PowersTheWorld(null))));
 
