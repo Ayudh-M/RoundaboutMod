@@ -151,6 +151,7 @@ public class ModEntities {
     public static EntityType<FallenVillager> FALLEN_VILLAGER;
     public static EntityType<FallenPhantom> FALLEN_PHANTOM;
     public static EntityType<FallenCreeper> FALLEN_CREEPER;
+    public static EntityType<WeatherReportEntity> WEATHER_REPORT;
 
 
 

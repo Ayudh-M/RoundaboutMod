@@ -295,6 +295,16 @@ public class FabricEntities {
                                 sized(0.75F, 2.05f).clientTrackingRange(14).build(Roundabout.MOD_ID+":the_world")
                 );
 
+        public static final EntityType<WeatherReportEntity> WEATHER_REPORT =
+                Registry.register(
+                        BuiltInRegistries.ENTITY_TYPE,
+                        Roundabout.location("weather_report"),
+                        EntityType.Builder.of(WeatherReportEntity::new, MobCategory.MISC)
+                                .sized(0.75f, 2.05f)
+                                .clientTrackingRange(14)
+                                .build(Roundabout.MOD_ID + ":weather_report")
+                );
+
         public static final EntityType<TheWorldEntity> THE_WORLD_ULTIMATE =
                 Registry.register(
                         BuiltInRegistries.ENTITY_TYPE,
@@ -831,6 +841,7 @@ public class FabricEntities {
         public static void register() {
                 /*Common Code Bridge*/
                 ModEntities.THE_WORLD = THE_WORLD;
+                ModEntities.WEATHER_REPORT = WEATHER_REPORT;
                 ModEntities.THE_WORLD_ULTIMATE = THE_WORLD_ULTIMATE;
                 ModEntities.TERRIER_DOG = TERRIER_DOG;
                 ModEntities.ZOMBIEFISH = ZOMBIEFISH;
@@ -991,6 +1002,7 @@ public class FabricEntities {
                 FabricDefaultAttributeRegistry.register(ROAD_ROLLER_ENTITY, RoadRollerEntity.createAttributes().build());
 
                 FabricDefaultAttributeRegistry.register(THE_WORLD, StandEntity.createStandAttributes());
+                FabricDefaultAttributeRegistry.register(WEATHER_REPORT, StandEntity.createStandAttributes());
 
                 FabricDefaultAttributeRegistry.register(THE_WORLD_ULTIMATE, StandEntity.createStandAttributes());
                 FabricDefaultAttributeRegistry.register(STAR_PLATINUM, StandEntity.createStandAttributes());

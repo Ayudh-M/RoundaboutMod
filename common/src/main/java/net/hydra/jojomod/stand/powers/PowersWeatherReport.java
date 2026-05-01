@@ -25,7 +25,7 @@ public class PowersWeatherReport extends NewPunchingStand {
 
     @Override
     public StandEntity getNewStandEntity() {
-        return ModEntities.THE_WORLD.create(this.getSelf().level());
+        return ModEntities.WEATHER_REPORT.create(this.getSelf().level());
     }
 
     @Override
