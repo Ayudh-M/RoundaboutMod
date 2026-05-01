@@ -269,6 +269,13 @@ public class ForgeEntities {
                             clientTrackingRange(14).
                             build(new ResourceLocation(Roundabout.MOD_ID, "the_world").toString())
             );
+    public static final RegistryObject<EntityType<WeatherReportEntity>> WEATHER_REPORT =
+            ENTITY_TYPES.register("weather_report", () ->
+                    EntityType.Builder.of(WeatherReportEntity::new, MobCategory.MISC)
+                            .sized(0.75f, 2.05f)
+                            .clientTrackingRange(14)
+                            .build(new ResourceLocation(Roundabout.MOD_ID, "weather_report").toString())
+            );
     public static final RegistryObject<EntityType<TheWorldEntity>> THE_WORLD_ULTIMATE =
             ENTITY_TYPES.register("the_world_ultimate", () ->
                     EntityType.Builder.of(TheWorldEntity::new, MobCategory.MISC).sized(0.75F, 2.05f).
