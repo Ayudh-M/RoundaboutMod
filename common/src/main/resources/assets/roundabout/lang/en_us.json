@@ -1587,6 +1587,8 @@
   "ability.roundabout.control_mode.desc": "Lets you control the stand, moving it where you need to have it. If in manual shooting mode, press left click with your mouse if the stand contains a bullet to shoot it into the direction you are watching or the mob you are pointing to. If you don't enter control mode, the stand will slowly float forwards and wander a little bit near moving mobs. The same counts if you don't give any input to the stand's movement.",
   "ability.roundabout.wind_vision": "Wind Vision",
   "ability.roundabout.wind_vision.desc": "Lets you see your stand's wind reading from your perspective, giving you similar visuals as if you would pilot your stand.",
+  "ability.roundabout.wind_detection": "Wind Detection",
+  "ability.roundabout.wind_detection.desc": "Weather Report reads the air around you, outlining living targets in a huge radius through walls.",
   "ability.roundabout.bonus_damage": "Bonus Stand Damage",
   "ability.roundabout.bonus_damage.desc": "When the stand redirects a bullet, a little stand damage is added to the projectile. It affects all projectiles",
   "ability.roundabout.wind_reading": "Wind Reading",
@@ -2183,6 +2185,8 @@
 
   "text.roundabout.manhattan_transfer.wind_vision": "Wind Vision On",
   "text.roundabout.manhattan_transfer.wind_vision_off": "Wind Vision Off",
+  "text.roundabout.weather_report.wind_detection": "Wind Detection On",
+  "text.roundabout.weather_report.wind_detection_off": "Wind Detection Off",
 
   "text.roundabout.vampire.flesh_bud_fail": "The victim is not weakened, or is agitated",
   "text.roundabout.vampire.flesh_bud_fail_already": "A flesh bud is already planted",

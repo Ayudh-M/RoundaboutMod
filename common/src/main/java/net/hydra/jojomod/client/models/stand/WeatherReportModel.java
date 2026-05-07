@@ -1,5 +1,6 @@
 package net.hydra.jojomod.client.models.stand;
 
+import net.hydra.jojomod.client.models.stand.animations.StandAnimations;
 import net.hydra.jojomod.entity.stand.WeatherReportEntity;
 import net.hydra.jojomod.event.powers.StandPowers;
 import net.hydra.jojomod.stand.powers.PowersWeatherReport;
@@ -276,5 +277,7 @@ public class WeatherReportModel<T extends WeatherReportEntity> extends StandMode
         super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
         defaultModifiers(entity);
         defaultAnimations(entity, ageInTicks, 1 / ((float) power.getBarrageWindup() / 20));
+        this.animate(entity.hideFists, StandAnimations.HIDE_FISTS, ageInTicks, 1f);
+        this.animate(entity.hideLeg, StandAnimations.HIDE_LEG, ageInTicks, 1f);
     }
 }

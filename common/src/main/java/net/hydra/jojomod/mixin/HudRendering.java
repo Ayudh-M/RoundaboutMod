@@ -259,11 +259,17 @@ public abstract class HudRendering implements IHudAccess {
             }
 
 
-             StandPowers powers = user.roundabout$getStandPowers();
-                if (powers.timeRewindOverlayTicks > -1) {
-                    RenderSystem.enableBlend();
-                    this.renderTextureOverlay($$1, StandIcons.TIME_REWIND, powers.getOverlayFromOverlayTicks($$0));
-                }
+            StandPowers powers = user.roundabout$getStandPowers();
+            if (powers instanceof PowersWeatherReport weatherReport && weatherReport.windDetectionActive()) {
+                RenderSystem.enableBlend();
+                roundabout$renderTextureOverlay($$1, new ResourceLocation(Roundabout.MOD_ID,
+                        "textures/misc/vamp_speed/frame_" + (minecraft.player.tickCount % 10) + ".png"),
+                        0.16F, 0.55F, 0.9F, 1F);
+            }
+            if (powers.timeRewindOverlayTicks > -1) {
+                RenderSystem.enableBlend();
+                this.renderTextureOverlay($$1, StandIcons.TIME_REWIND, powers.getOverlayFromOverlayTicks($$0));
+            }
 
         }
         StandHudRender.renderStandHud($$1, minecraft, this.getCameraPlayer(), screenWidth, screenHeight, tickCount, this.getVehicleMaxHearts(this.getPlayerVehicleWithHealth()), roundabout$flashAlpha, roundabout$otherFlashAlpha);

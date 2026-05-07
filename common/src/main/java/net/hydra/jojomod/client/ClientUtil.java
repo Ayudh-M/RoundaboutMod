@@ -939,6 +939,9 @@ public class ClientUtil {
         if (player != null && ((StandUser) player).roundabout$getStandPowers() instanceof PowersManhattanTransfer PMT && PMT.isPiloting()) {
                     return true;
         }
+        if (player != null && ((StandUser) player).roundabout$getStandPowers() instanceof PowersWeatherReport PWR && PWR.windDetectionActive()) {
+            return true;
+        }
         return false;
     }
     public static boolean isFabulous(){
